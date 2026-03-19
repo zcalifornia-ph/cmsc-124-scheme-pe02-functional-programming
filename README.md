@@ -17,9 +17,9 @@
   <p align="center">
     Functional-programming solutions in Scheme/Racket for T-Ice, prime summation, factor counting, nested-list summation, and list reversal.
     <br />
-    Version: v0.0.1
+    Version: v0.0.2
     <br />
-    Status: root documentation bootstrap complete; implementation artifact pending.
+    Status: AI-DLC planning baseline and U1-B1 design artifacts complete; implementation still pending approval and coding.
     <br />
     <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming"><strong>Explore the repository »</strong></a>
     <br />
@@ -86,6 +86,18 @@ The expected submission is a single `.rkt` file named according to the course in
 - [Scheme](https://schemers.org/)
 - [Markdown](https://www.markdownguide.org/)
 
+### Current Artifact Baseline
+
+The repository now includes an AI-DLC planning and pre-construction baseline under `scheme-pe02/`:
+
+- `scheme-pe02/ai-dlc-docs/plans/level-1-plan.md`
+- `scheme-pe02/ai-dlc-docs/requirements/INCEPTION.md`
+- `scheme-pe02/REQUIREMENTS.md`
+- `scheme-pe02/docs/design/u1/`
+- `scheme-pe02/docs/traceability/u1/`
+
+These artifacts establish the approved scope, requirements decomposition, and the pre-coding design package for Unit `U1`, Bolt `U1-B1` (`T-Ice`).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
@@ -103,6 +115,7 @@ The expected submission is a single `.rkt` file named according to the course in
    cd cmsc-124-scheme-pe02-functional-programming
    ```
 2. Create or update the required single-file Scheme submission using the course naming convention.
+   For this repository's tracked workflow, review the planning baseline in `scheme-pe02/` before implementing the submission file.
 3. Run or load the file with Racket.
    ```sh
    racket <your-file>.rkt
@@ -136,7 +149,9 @@ The grading rubric in the course brief emphasizes:
 ## Roadmap
 
 - [x] Bootstrap repository governance and root documentation
-- [ ] Implement `T-Ice`
+- [x] Create the Level 1 Plan, `INCEPTION.md`, and `REQUIREMENTS.md` for `scheme-pe02/`
+- [x] Draft Unit `U1` / Bolt `U1-B1` design, ADR, and traceability artifacts
+- [ ] Approve the `U1-B1` design package and implement `T-Ice`
 - [ ] Implement `Sumprimes`
 - [ ] Implement `count-factors`
 - [ ] Implement `my-sums`

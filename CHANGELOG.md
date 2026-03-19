@@ -1,6 +1,24 @@
 # Changelog
 
-Status: initial repository bootstrap for a CMSC 124 Scheme/Racket programming exercise.
+Status: AI-DLC planning baseline prepared for the CMSC 124 Scheme/Racket programming exercise; implementation is staged but not yet coded.
+
+## v0.0.2
+
+### Added or Changed
+- Added the `scheme-pe02/` project workspace with AI-DLC planning artifacts:
+  - `scheme-pe02/ai-dlc-docs/plans/level-1-plan.md`
+  - `scheme-pe02/ai-dlc-docs/requirements/INCEPTION.md`
+  - `scheme-pe02/REQUIREMENTS.md`
+- Added Unit `U1` / Bolt `U1-B1` pre-coding construction artifacts:
+  - `scheme-pe02/docs/design/u1/domain-design.md`
+  - `scheme-pe02/docs/design/u1/logical-design.md`
+  - `scheme-pe02/docs/design/u1/adr/u1-b1-t-ice-output-flow-adr.md`
+  - `scheme-pe02/docs/traceability/u1/u1-b1-t-ice-output-flow-traceability.md`
+- Updated `README.md` version marker from `v0.0.1` to `v0.0.2` and refreshed status/roadmap text to reflect the new planning and build-preparation baseline.
+- Refreshed `repo/images/project_screen.png` to match the current project presentation asset.
+
+### For Deletion
+- None from this task context (planning/design documentation and screenshot refresh only; no generated build artifacts were created).
 
 ## v0.0.1
 
