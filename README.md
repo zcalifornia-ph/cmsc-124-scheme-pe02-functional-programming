@@ -17,9 +17,9 @@
   <p align="center">
     Functional-programming solutions in Scheme/Racket for T-Ice, prime summation, factor counting, nested-list summation, and list reversal.
     <br />
-    Version: v1.0.0
+    Version: v1.0.1
     <br />
-    Status: stable `v1.0.0` publishing baseline; Units `U1`, `U2`, and `U3` are complete, and the single-file submission artifact has passed final runtime validation and rubric closeout.
+    Status: stable `v1.0.1` documentation refresh; Units `U1`, `U2`, and `U3` remain complete, and the published submission artifact now has clone-ready run/load instructions in the root docs.
     <br />
     <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming"><strong>Explore the repository »</strong></a>
     <br />
@@ -100,7 +100,7 @@ The repository now includes the published submission artifact plus supporting de
 
 These artifacts establish the approved scope, requirements decomposition, and the design/traceability baseline for the completed numeric procedure lane in Unit `U1`, the completed list-processing lane in Unit `U2`, and the completed submission-readiness lane in Unit `U3`, including the final validation and rubric-closeout bundle.
 
-The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it includes validated implementations of `T-Ice`, `Sumprimes`, `count-factors`, `my-sums`, and `my-reverse`, plus final local validation evidence, an attribution header, and an embedded license block suited for publishing and review.
+The current submission file is `scheme-pe02/Adeva_California_PE02.rkt`, and it includes validated implementations of `T-Ice`, `Sumprimes`, `count-factors`, `my-sums`, and `my-reverse`, plus final local validation evidence, an attribution header, and an embedded license block suited for publishing and review.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,13 +118,33 @@ The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it i
    git clone https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming.git
    cd cmsc-124-scheme-pe02-functional-programming
    ```
-2. Create or update the required single-file Scheme submission using the course naming convention.
-   For this repository's tracked workflow, review the planning baseline in `scheme-pe02/` before implementing the submission file.
-3. Run or load the file with Racket.
+2. The tracked submission file in this repository is `scheme-pe02/Adeva_California_PE02.rkt`.
+3. Load the file with Racket to confirm it runs without errors.
+   This file only defines procedures, so a successful run prints no output by itself.
    ```sh
-   racket <your-file>.rkt
+   racket scheme-pe02/Adeva_California_PE02.rkt
    ```
-   You can also open the same file in DrRacket and run it there.
+   On Windows, if `racket` is not on your `PATH`, use:
+   ```powershell
+   & "C:\Program Files\Racket\Racket.exe" scheme-pe02/Adeva_California_PE02.rkt
+   ```
+4. To call the procedures from the terminal, start an interactive session in the file's namespace:
+   ```sh
+   racket -i -l racket/enter -e '(enter! (file "scheme-pe02/Adeva_California_PE02.rkt"))'
+   ```
+   On Windows, if needed:
+   ```powershell
+   & "C:\Program Files\Racket\Racket.exe" -i -l racket/enter -e '(enter! (file "scheme-pe02/Adeva_California_PE02.rkt"))'
+   ```
+   Then run any of the required procedures at the prompt, such as:
+   ```scheme
+   (T-Ice 8)
+   (Sumprimes 10)
+   (count-factors 4 48)
+   (my-sums '(1 (2 (3 4)) 5))
+   (my-reverse '(1 2 3 4))
+   ```
+5. You can also open `scheme-pe02/Adeva_California_PE02.rkt` in DrRacket, click **Run**, and execute the same sample calls in the interactions pane.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,6 +188,7 @@ The grading rubric in the course brief emphasizes:
 - [x] Approve the `U3-B1` design package and implement the submission artifact structure/documentation pass
 - [x] Complete the final runtime validation and rubric closeout in `U3-B2`
 - [x] Prepare the repository for a stable `v1.0.0` publishing baseline
+- [x] Document clone-ready run/load instructions for `scheme-pe02/Adeva_California_PE02.rkt`
 
 See the [open issues](https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/issues) for tracked changes and follow-up tasks.
 

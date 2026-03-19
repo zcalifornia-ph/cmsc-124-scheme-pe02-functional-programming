@@ -1,6 +1,17 @@
 # Changelog
 
-Status: stable `v1.0.0` publishing baseline for the completed CMSC 124 Scheme/Racket submission; the final single-file artifact and supporting public docs are ready for release.
+Status: stable `v1.0.1` documentation baseline for the completed CMSC 124 Scheme/Racket submission; the published artifact and root docs now include corrected clone-facing run guidance.
+
+## v1.0.1
+
+### Added or Changed
+- Updated `README.md` version marker from `v1.0.0` to `v1.0.1`.
+- Corrected the published submission filename reference in `README.md` from `scheme-pe02/California_Adeva_PE02.rkt` to `scheme-pe02/Adeva_California_PE02.rkt`.
+- Expanded `README.md` setup guidance with clone-ready commands for loading the Racket file, handling the common Windows `PATH` case, entering the module namespace interactively, and running the required procedures from the terminal or DrRacket.
+- Added `docs/version-v1-0-1-docs.md` with the detailed release note for this documentation-only follow-up.
+
+### For Deletion
+- None from this task context (documentation-only changes; no generated build artifacts were created).
 
 ## v1.0.0
 
