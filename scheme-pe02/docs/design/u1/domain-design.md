@@ -3,37 +3,43 @@
 Status: Draft for Validation
 Unit ID: `U1`
 Unit Name: `Numeric Procedure Unit`
-Selected Bolt: `U1-B1`
-Linked Story IDs: `US-01`
+Covered Bolts: `U1-B1`, `U1-B2`
+Linked Story IDs: `US-01`, `US-02`
 Linked NFR IDs: `NFR-01`, `NFR-02`, `NFR-04`, `NFR-07`
-Linked Risk IDs: `R1`, `R6`, `R8`
+Linked Risk IDs: `R1`, `R2`, `R6`, `R8`
 
 ## Context Summary
 
 - `scheme-pe02/` currently contains planning artifacts only; no Racket implementation exists yet.
 - The resolved build target remains a single submission file: `scheme-pe02/California_Adeva_PE02.rkt`.
-- `U1` owns three public numeric/display procedures, but `U1-B1` is scoped only to `T-Ice`.
-- `U1-B1` is the smallest shippable chunk in `U1` because it isolates one public procedure and its two planned tests.
+- `U1` owns three public numeric/display procedures, while the active prepared bolts are `U1-B1` (`T-Ice`) and `U1-B2` (`Sumprimes`).
+- `U1-B1` and `U1-B2` are each smallest shippable chunks because each isolates one public procedure and two planned tests.
 - The approved observable contract is grading-sensitive: tokens must be space-separated in the sample order `1 T ICE T 5 T-ICE 7 T`.
+- The approved `Sumprimes` contract is also grading-sensitive because the assignment requires visible output, not only a returned total.
 - The repo-approved interpretation of `no global identifiers` favors local helpers and no mutable global state.
-- There are no external integrations, persistence layers, or environment variables in scope for this bolt.
-- Validation for this bolt is local and output-oriented, centered on `T-01` and `T-02`.
+- There are no external integrations, persistence layers, or environment variables in scope for the active prepared bolts.
+- Validation for the active prepared bolts is local and output-oriented, centered on `T-01` to `T-04`.
 
 ## Changed Concepts and Boundaries
 
 ### Submission Surface
 
-`U1-B1` introduces the first public procedure planned for the single submission file:
+The active prepared U1 bolts introduce these public procedures into the planned single submission file:
 
 - Public interface: `(T-Ice n)`
+- Public interface: `(Sumprimes n)`
 
-No other public procedures are in scope for this bolt, even though `U1` will later also include `Sumprimes` and `count-factors`.
+`count-factors` remains out of scope until `U1-B3`.
 
 ### Domain Concepts
 
 - `Input Range`: the inclusive sequence from `1` to `n`
 - `Token Mapping`: the rule that maps each current integer to either a numeric display value or one of the required tokens
 - `Display Stream`: the ordered sequence of rendered tokens visible to the grader
+- `Prime Candidate`: a current integer being evaluated for prime membership
+- `Prime Predicate`: the rule used to decide whether a candidate contributes to the sum
+- `Prime Sum Accumulator`: the running total of prime values from `1` to `n`
+- `Visible Sum Output`: the displayed result required by the approved `Sumprimes` observable contract
 
 ## Invariants and Business Rules
 
@@ -45,25 +51,33 @@ No other public procedures are in scope for this bolt, even though `U1` will lat
 6. Otherwise, the rendered output must be the number itself.
 7. The visible output must preserve the exact token order produced by the integer sequence.
 8. Tokens must be separated by single spaces; a trailing newline is acceptable if it does not alter token order or spacing between tokens.
+9. For `Sumprimes`, only prime values from `1` to `n` contribute to the total.
+10. `1` does not contribute to the prime total.
+11. For boundary input such as `n = 1`, the visible total must be `0`.
+12. The observable contract for `Sumprimes` must display the computed total and must not add extra visible output beyond that total.
 
 ## Interfaces
 
 ### Public Interface
 
 - `(T-Ice n)`: display the required tokenized sequence for integers `1` to `n`
+- `(Sumprimes n)`: display the sum of prime numbers from `1` to `n`
 
 ### Planned Local Helper Responsibilities
 
 - Determine the display token for one integer
 - Emit the ordered display stream without introducing extra top-level identifiers
 - Control spacing so the observable contract remains stable
+- Determine whether a candidate integer is prime
+- Accumulate the running prime total
+- Emit only the approved visible sum output for `Sumprimes`
 
 The helper naming is a logical-design concern, but helper scope must remain local to preserve the approved interpretation of `no global identifiers`.
 
 ## Brownfield References
 
-Not applicable. This is green-field work and there is no existing code in scope to reverse engineer for `U1-B1`.
+Not applicable. This is green-field work and there is no existing code in scope to reverse engineer for the prepared `U1` bolts.
 
 ## Human Validation Required
 
-Approve this domain design together with the logical design and ADR before heavy coding begins for `U1-B1`.
+Approve this domain design together with the logical design and the relevant bolt ADR before heavy coding begins for the selected `U1` bolt.

@@ -17,9 +17,9 @@
   <p align="center">
     Functional-programming solutions in Scheme/Racket for T-Ice, prime summation, factor counting, nested-list summation, and list reversal.
     <br />
-    Version: v0.0.2
+    Version: v0.0.3
     <br />
-    Status: AI-DLC planning baseline and U1-B1 design artifacts complete; implementation still pending approval and coding.
+    Status: AI-DLC planning baseline plus U1-B1 and U1-B2 design artifacts complete; implementation still pending approval and coding.
     <br />
     <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming"><strong>Explore the repository »</strong></a>
     <br />
@@ -96,7 +96,7 @@ The repository now includes an AI-DLC planning and pre-construction baseline und
 - `scheme-pe02/docs/design/u1/`
 - `scheme-pe02/docs/traceability/u1/`
 
-These artifacts establish the approved scope, requirements decomposition, and the pre-coding design package for Unit `U1`, Bolt `U1-B1` (`T-Ice`).
+These artifacts establish the approved scope, requirements decomposition, and the pre-coding design packages for Unit `U1`, Bolt `U1-B1` (`T-Ice`) and Bolt `U1-B2` (`Sumprimes`).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,8 +151,9 @@ The grading rubric in the course brief emphasizes:
 - [x] Bootstrap repository governance and root documentation
 - [x] Create the Level 1 Plan, `INCEPTION.md`, and `REQUIREMENTS.md` for `scheme-pe02/`
 - [x] Draft Unit `U1` / Bolt `U1-B1` design, ADR, and traceability artifacts
+- [x] Draft Unit `U1` / Bolt `U1-B2` design, ADR, and traceability artifacts
 - [ ] Approve the `U1-B1` design package and implement `T-Ice`
-- [ ] Implement `Sumprimes`
+- [ ] Approve the `U1-B2` design package and implement `Sumprimes`
 - [ ] Implement `count-factors`
 - [ ] Implement `my-sums`
 - [ ] Implement `my-reverse`

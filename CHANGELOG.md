@@ -1,6 +1,19 @@
 # Changelog
 
-Status: AI-DLC planning baseline prepared for the CMSC 124 Scheme/Racket programming exercise; implementation is staged but not yet coded.
+Status: AI-DLC planning baseline and the first two U1 design baselines are prepared for the CMSC 124 Scheme/Racket programming exercise; implementation is staged but not yet coded.
+
+## v0.0.3
+
+### Added or Changed
+- Expanded `scheme-pe02/docs/design/u1/domain-design.md` to carry forward both prepared numeric/display bolts in Unit `U1`, covering `T-Ice` and `Sumprimes`.
+- Expanded `scheme-pe02/docs/design/u1/logical-design.md` to add the `U1-B2` implementation shape, validation plan, and output-contract handling for `Sumprimes`.
+- Added the `U1-B2` bolt-specific construction artifacts:
+  - `scheme-pe02/docs/design/u1/adr/u1-b2-sumprimes-display-contract-adr.md`
+  - `scheme-pe02/docs/traceability/u1/u1-b2-sumprimes-display-contract-traceability.md`
+- Updated `README.md` version marker from `v0.0.2` to `v0.0.3` and refreshed status/roadmap text to reflect the completed `U1-B2` design-preparation milestone.
+
+### For Deletion
+- None from this task context (design and traceability documentation only; no generated build artifacts were created).
 
 ## v0.0.2
 
