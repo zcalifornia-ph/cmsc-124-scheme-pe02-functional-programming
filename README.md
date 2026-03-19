@@ -17,9 +17,9 @@
   <p align="center">
     Functional-programming solutions in Scheme/Racket for T-Ice, prime summation, factor counting, nested-list summation, and list reversal.
     <br />
-    Version: v0.0.6
+    Version: v0.0.7
     <br />
-    Status: Unit `U1` (`T-Ice`, `Sumprimes`, and `count-factors`) is implemented and validated; `my-sums`, `my-reverse`, and submission-readiness work are still pending.
+    Status: Unit `U1` and Unit `U2` / Bolt `U2-B1` (`my-sums`) are implemented and validated; `my-reverse` and submission-readiness work are still pending.
     <br />
     <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming"><strong>Explore the repository »</strong></a>
     <br />
@@ -95,10 +95,12 @@ The repository now includes an AI-DLC planning and pre-construction baseline und
 - `scheme-pe02/REQUIREMENTS.md`
 - `scheme-pe02/docs/design/u1/`
 - `scheme-pe02/docs/traceability/u1/`
+- `scheme-pe02/docs/design/u2/`
+- `scheme-pe02/docs/traceability/u2/`
 
-These artifacts establish the approved scope, requirements decomposition, and the design/traceability baseline for the full numeric procedure lane in Unit `U1`, including `U1-B1` (`T-Ice`), `U1-B2` (`Sumprimes`), and `U1-B3` (`count-factors`).
+These artifacts establish the approved scope, requirements decomposition, and the design/traceability baseline for the completed numeric procedure lane in Unit `U1` plus the first list-processing bolt in Unit `U2`, `U2-B1` (`my-sums`).
 
-The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it now includes validated implementations of `T-Ice`, `Sumprimes`, and `count-factors`.
+The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it now includes validated implementations of `T-Ice`, `Sumprimes`, `count-factors`, and `my-sums`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,7 +136,7 @@ After implementing the required procedures, typical interactions should look lik
 (T-Ice 8)                ; displays: 1 T ICE T 5 T-ICE 7 T
 (Sumprimes 10)           ; displays: 17
 (count-factors 4 48)     ; returns: 2
-(my-sums '(1 (2 3) 4))   ; returns: 10
+(my-sums '(1 (2 (3 4)) 5)) ; returns: 15
 (my-reverse '(1 2 3 4))  ; returns: '(4 3 2 1)
 ```
 
@@ -159,7 +161,8 @@ The grading rubric in the course brief emphasizes:
 - [x] Approve the `U1-B2` design package and implement `Sumprimes`
 - [x] Approve the `U1-B3` design package and implement `count-factors`
 - [x] Complete Unit `U1` numeric procedure validation
-- [ ] Implement `my-sums`
+- [x] Draft Unit `U2` / Bolt `U2-B1` design, ADR, and traceability artifacts
+- [x] Approve the `U2-B1` design package and implement `my-sums`
 - [ ] Implement `my-reverse`
 - [ ] Close submission-readiness and rubric validation
 
@@ -218,4 +221,6 @@ Project Link: [https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/zcalifornia
 [product-screenshot]: repo/images/project_screen.png
+
+
 

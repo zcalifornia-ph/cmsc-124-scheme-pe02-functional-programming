@@ -2,7 +2,8 @@
 
 ; California_Adeva_PE02.rkt
 ; CMSC 124 Programming Exercise 02
-; Current implemented scope: Unit U1 / Bolts U1-B1 (`T-Ice`), U1-B2 (`Sumprimes`), and U1-B3 (`count-factors`)
+; Current implemented scope: Unit U1 / Bolts U1-B1 (`T-Ice`), U1-B2 (`Sumprimes`),
+; U1-B3 (`count-factors`), and Unit U2 / Bolt U2-B1 (`my-sums`)
 
 ; T-Ice
 ; Displays values from 1 to n, replacing values divisible by:
@@ -73,3 +74,19 @@
      (display "None")
      (newline)
      0]))
+
+; my-sums
+; Returns the sum of all numbers in a nested list.
+; The approved scope for this bolt is numbers-only nested lists.
+; Examples:
+;   (my-sums '(1 (2 (3 4)) 5)) ; returns: 15
+;   (my-sums '())              ; returns: 0
+(define (my-sums lis)
+  (define (sum-structure current)
+    (cond
+      [(null? current) 0]
+      [(pair? current)
+       (+ (sum-structure (car current))
+          (sum-structure (cdr current)))]
+      [else current]))
+  (sum-structure lis))

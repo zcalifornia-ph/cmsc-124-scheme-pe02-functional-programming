@@ -1,6 +1,17 @@
 # Changelog
 
-Status: the numeric procedure lane in Unit `U1` is now fully implemented and validated for the CMSC 124 Scheme/Racket programming exercise; the list procedures and final submission-readiness work are still pending.
+Status: the numeric procedure lane in Unit `U1` and the first list-processing bolt in Unit `U2` are now implemented and validated for the CMSC 124 Scheme/Racket programming exercise; `my-reverse` and final submission-readiness work are still pending.
+
+## v0.0.7
+
+### Added or Changed
+- Updated `scheme-pe02/California_Adeva_PE02.rkt` to add the fourth implemented coursework procedure: `my-sums`.
+- Added `scheme-pe02/docs/design/u2/domain-design.md`, `scheme-pe02/docs/design/u2/logical-design.md`, and `scheme-pe02/docs/design/u2/adr/u2-b1-my-sums-nested-accumulation-adr.md` to establish the first list-processing bolt design baseline.
+- Added `scheme-pe02/docs/traceability/u2/u2-b1-my-sums-nested-accumulation-traceability.md` with executed validation evidence for `T-07`, `T-08`, deployment check `DPL-03`, and ready-state ops signals.
+- Updated `README.md` version marker from `v0.0.6` to `v0.0.7` and refreshed the root status, artifact baseline, usage example, and roadmap text to reflect that `U2-B1` is implemented and validated.
+
+### For Deletion
+- None from this task context (implementation and documentation updates only; no generated build artifacts were created).
 
 ## v0.0.6
 
@@ -75,4 +86,3 @@ Status: the numeric procedure lane in Unit `U1` is now fully implemented and val
 
 ### For Deletion
 - None from this task context (documentation/bootstrap changes only; no generated build artifacts were created).
-
