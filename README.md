@@ -17,9 +17,9 @@
   <p align="center">
     Functional-programming solutions in Scheme/Racket for T-Ice, prime summation, factor counting, nested-list summation, and list reversal.
     <br />
-    Version: v0.0.4
+    Version: v0.0.5
     <br />
-    Status: U1-B1 (`T-Ice`) is implemented and validated; U1-B2 design artifacts are ready; remaining procedures are still pending implementation.
+    Status: U1-B1 (`T-Ice`) and U1-B2 (`Sumprimes`) are implemented and validated; `count-factors`, `my-sums`, and `my-reverse` are still pending.
     <br />
     <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming"><strong>Explore the repository »</strong></a>
     <br />
@@ -98,7 +98,7 @@ The repository now includes an AI-DLC planning and pre-construction baseline und
 
 These artifacts establish the approved scope, requirements decomposition, and the pre-coding design packages for Unit `U1`, Bolt `U1-B1` (`T-Ice`) and Bolt `U1-B2` (`Sumprimes`).
 
-The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it now includes a validated implementation of `T-Ice`.
+The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it now includes validated implementations of `T-Ice` and `Sumprimes`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,7 +155,7 @@ The grading rubric in the course brief emphasizes:
 - [x] Draft Unit `U1` / Bolt `U1-B1` design, ADR, and traceability artifacts
 - [x] Draft Unit `U1` / Bolt `U1-B2` design, ADR, and traceability artifacts
 - [x] Approve the `U1-B1` design package and implement `T-Ice`
-- [ ] Approve the `U1-B2` design package and implement `Sumprimes`
+- [x] Approve the `U1-B2` design package and implement `Sumprimes`
 - [ ] Implement `count-factors`
 - [ ] Implement `my-sums`
 - [ ] Implement `my-reverse`

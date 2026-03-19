@@ -1,6 +1,6 @@
 # U1-B2 Traceability
 
-Status: Draft for Validation
+Status: Completed and Validated on March 19, 2026
 Unit ID: `U1`
 Bolt ID: `U1-B2`
 Bolt Name: `Sumprimes` display contract
@@ -21,26 +21,26 @@ Bolt Name: `Sumprimes` display contract
 
 ## Bolt Checklist
 
-- [ ] Design: define the prime-detection and accumulation rules plus the approved display-only observable contract in `U1-domain-design.md` and `U1-logical-design.md`
-- [ ] Implement: add `(Sumprimes n)` with local helpers as needed
-- [ ] Test: execute `T-03` and `T-04`, recording expected vs observed output
-- [ ] Docs: add inline comments and a representative usage comment for `Sumprimes`
-- [ ] Review: confirm there is no extra visible output beyond the approved contract
+- [x] Design: defined the prime-detection and accumulation rules plus the approved display-only observable contract in `U1-domain-design.md` and `U1-logical-design.md`
+- [x] Implement: added `(Sumprimes n)` with local helpers as needed
+- [x] Test: executed `T-03` and `T-04`, recording expected vs observed output
+- [x] Docs: added inline comments and a representative usage comment for `Sumprimes`
+- [x] Review: confirmed there is no extra visible output beyond the approved contract
 
 ## Context Summary
 
-- There is still no `.rkt` implementation in `scheme-pe02/`; the bolt remains green-field at the code level.
-- `U1-B1` design artifacts already exist, but `T-Ice` is not yet implemented.
+- `scheme-pe02/California_Adeva_PE02.rkt` now exists as the active coursework submission file.
+- `U1-B1` is already implemented and validated, so `U1-B2` was added into a live submission file rather than a green-field empty target.
 - `U1-B2` is still independently decomposable because its public contract and tests are self-contained.
 - The implementation target remains `scheme-pe02/California_Adeva_PE02.rkt`.
 - The visible-output behavior of `Sumprimes` is grading-sensitive because the assignment says the function `displays` the sum.
 - Prime-detection behavior must exclude `1` and include only prime values in the accumulator.
 - No external packages, services, config files, or environment variables are involved.
-- Build-task protocol requires design and ADR approval before heavy coding begins.
+- The approved design and ADR were followed without requiring a material redesign during implementation.
 
 ## Affected Files and Modules
 
-- Planned code file: `scheme-pe02/California_Adeva_PE02.rkt`
+- Code file: `scheme-pe02/California_Adeva_PE02.rkt`
 - Updated design artifact: `scheme-pe02/docs/design/u1/domain-design.md`
 - Updated design artifact: `scheme-pe02/docs/design/u1/logical-design.md`
 - ADR artifact: `scheme-pe02/docs/design/u1/adr/u1-b2-sumprimes-display-contract-adr.md`
@@ -53,26 +53,38 @@ Bolt Name: `Sumprimes` display contract
 - External dependencies: none
 - Integration points: none beyond local Racket execution
 
-## Test Evidence Placeholders
+## Executed Test Evidence
 
-| Test ID | Planned Check | Expected Evidence | Result |
+| Test ID | Executed Check | Observed Evidence | Result |
 | --- | --- | --- | --- |
-| T-03 | `(Sumprimes 1)` | exact visible output `0` | Pending |
-| T-04 | `(Sumprimes 10)` | exact visible output `17` | Pending |
+| T-03 | Namespace-driven Racket invocation of `(Sumprimes 1)` | Printed output matched `0` between REPL prompts. | Pass |
+| T-04 | Namespace-driven Racket invocation of `(Sumprimes 10)` | Printed output matched `17` between REPL prompts. | Pass |
 
-## Deployment Handoff Placeholders
+## Acceptance Run Summary
+
+- Story satisfied: `US-02`
+- Acceptance criteria satisfied: prime-only accumulation, exclusion of `1`, boundary output for `n = 1`, representative output for `n = 10`, and approved visible-output contract
+- Linked NFR checks satisfied for this bolt: `NFR-01`, `NFR-02`, `NFR-04`, `NFR-07`
+
+## Deployment Handoff Notes
 
 | Deployment Check ID | Handoff Note | Status |
 | --- | --- | --- |
-| DPL-03 | Confirm the final file loads and runs locally under `#lang racket` after implementation | Pending |
+| DPL-03 | Direct local load via `C:\Program Files\Racket\Racket.exe scheme-pe02\California_Adeva_PE02.rkt` exited with code `0` and no load errors after `Sumprimes` was added. | Ready |
 
-## Ops Signal Placeholders
+## Ops Signal Notes
 
 | Ops Signal ID | Signal / Observable Hook | Status |
 | --- | --- | --- |
-| OPS-01 | Local file load/run without blocking errors | Pending |
-| OPS-02 | Stable printed output for representative `Sumprimes` runs | Pending |
+| OPS-01 | Local file load/run without blocking errors | Ready |
+| OPS-02 | Stable printed output for representative `Sumprimes` runs | Ready |
 
-## Human Validation Required
+## Result Summary
 
-Approve this traceability baseline together with the domain design, logical design, and ADR before heavy coding begins for `U1-B2`.
+`U1-B2` is implemented and validated. Proof lives in:
+
+- `scheme-pe02/California_Adeva_PE02.rkt`
+- `scheme-pe02/docs/design/u1/domain-design.md`
+- `scheme-pe02/docs/design/u1/logical-design.md`
+- `scheme-pe02/docs/design/u1/adr/u1-b2-sumprimes-display-contract-adr.md`
+- `scheme-pe02/docs/traceability/u1/u1-b2-sumprimes-display-contract-traceability.md`

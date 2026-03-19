@@ -2,7 +2,7 @@
 
 ; California_Adeva_PE02.rkt
 ; CMSC 124 Programming Exercise 02
-; Current implemented scope: Unit U1 / Bolt U1-B1 (`T-Ice`)
+; Current implemented scope: Unit U1 / Bolts U1-B1 (`T-Ice`) and U1-B2 (`Sumprimes`)
 
 ; T-Ice
 ; Displays values from 1 to n, replacing values divisible by:
@@ -27,4 +27,29 @@
        (emit (add1 current) #f)]))
   (when (>= n 1)
     (emit 1 #t))
+  (newline))
+
+; Sumprimes
+; Displays the sum of all prime numbers from 1 to n.
+; The visible output is the contract being validated for this bolt.
+; Examples:
+;   (Sumprimes 1)  ; displays: 0
+;   (Sumprimes 10) ; displays: 17
+(define (Sumprimes n)
+  (define (prime? candidate)
+    (cond
+      [(<= candidate 1) #f]
+      [else
+       (define (has-divisor? divisor)
+         (cond
+           [(> (* divisor divisor) candidate) #f]
+           [(zero? (remainder candidate divisor)) #t]
+           [else (has-divisor? (add1 divisor))]))
+       (not (has-divisor? 2))]))
+  (define (sum-primes current total)
+    (cond
+      [(> current n) total]
+      [(prime? current) (sum-primes (add1 current) (+ total current))]
+      [else (sum-primes (add1 current) total)]))
+  (display (sum-primes 1 0))
   (newline))

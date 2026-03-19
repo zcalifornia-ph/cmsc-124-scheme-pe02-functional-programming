@@ -1,6 +1,16 @@
 # Changelog
 
-Status: the first implementation bolt is now landed and validated for the CMSC 124 Scheme/Racket programming exercise; the remaining procedures are still pending.
+Status: the first two implementation bolts are now landed and validated for the CMSC 124 Scheme/Racket programming exercise; the remaining procedures are still pending.
+
+## v0.0.5
+
+### Added or Changed
+- Updated `scheme-pe02/California_Adeva_PE02.rkt` to add the second implemented coursework procedure: `Sumprimes`.
+- Updated `scheme-pe02/docs/traceability/u1/u1-b2-sumprimes-display-contract-traceability.md` with executed validation evidence for `T-03`, `T-04`, deployment check `DPL-03`, and ready-state ops signals.
+- Updated `README.md` version marker from `v0.0.4` to `v0.0.5` and refreshed the root status/roadmap text to reflect that `U1-B2` is implemented and validated.
+
+### For Deletion
+- None from this task context (implementation and traceability updates only; no generated build artifacts were created).
 
 ## v0.0.4
 
