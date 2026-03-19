@@ -17,9 +17,9 @@
   <p align="center">
     Functional-programming solutions in Scheme/Racket for T-Ice, prime summation, factor counting, nested-list summation, and list reversal.
     <br />
-    Version: v0.0.7
+    Version: v0.0.8
     <br />
-    Status: Unit `U1` and Unit `U2` / Bolt `U2-B1` (`my-sums`) are implemented and validated; `my-reverse` and submission-readiness work are still pending.
+    Status: Unit `U1` and Unit `U2` are implemented and validated; all five required procedures are present; submission-readiness work in `U3` is still pending.
     <br />
     <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming"><strong>Explore the repository »</strong></a>
     <br />
@@ -88,7 +88,7 @@ The expected submission is a single `.rkt` file named according to the course in
 
 ### Current Artifact Baseline
 
-The repository now includes an AI-DLC planning and pre-construction baseline under `scheme-pe02/`:
+The repository now includes an AI-DLC planning, construction, and validation baseline under `scheme-pe02/`:
 
 - `scheme-pe02/ai-dlc-docs/plans/level-1-plan.md`
 - `scheme-pe02/ai-dlc-docs/requirements/INCEPTION.md`
@@ -98,9 +98,9 @@ The repository now includes an AI-DLC planning and pre-construction baseline und
 - `scheme-pe02/docs/design/u2/`
 - `scheme-pe02/docs/traceability/u2/`
 
-These artifacts establish the approved scope, requirements decomposition, and the design/traceability baseline for the completed numeric procedure lane in Unit `U1` plus the first list-processing bolt in Unit `U2`, `U2-B1` (`my-sums`).
+These artifacts establish the approved scope, requirements decomposition, and the design/traceability baseline for the completed numeric procedure lane in Unit `U1` plus the completed list-processing lane in Unit `U2`.
 
-The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it now includes validated implementations of `T-Ice`, `Sumprimes`, `count-factors`, and `my-sums`.
+The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it now includes validated implementations of `T-Ice`, `Sumprimes`, `count-factors`, `my-sums`, and `my-reverse`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -163,7 +163,8 @@ The grading rubric in the course brief emphasizes:
 - [x] Complete Unit `U1` numeric procedure validation
 - [x] Draft Unit `U2` / Bolt `U2-B1` design, ADR, and traceability artifacts
 - [x] Approve the `U2-B1` design package and implement `my-sums`
-- [ ] Implement `my-reverse`
+- [x] Approve the `U2-B2` design package and implement `my-reverse`
+- [x] Complete Unit U2 list procedure validation
 - [ ] Close submission-readiness and rubric validation
 
 See the [open issues](https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/issues) for tracked changes and follow-up tasks.

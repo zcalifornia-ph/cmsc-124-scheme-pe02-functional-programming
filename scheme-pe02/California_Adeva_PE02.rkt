@@ -3,7 +3,7 @@
 ; California_Adeva_PE02.rkt
 ; CMSC 124 Programming Exercise 02
 ; Current implemented scope: Unit U1 / Bolts U1-B1 (`T-Ice`), U1-B2 (`Sumprimes`),
-; U1-B3 (`count-factors`), and Unit U2 / Bolt U2-B1 (`my-sums`)
+; U1-B3 (`count-factors`), and Unit U2 / Bolts U2-B1 (`my-sums`) and U2-B2 (`my-reverse`)
 
 ; T-Ice
 ; Displays values from 1 to n, replacing values divisible by:
@@ -90,3 +90,18 @@
           (sum-structure (cdr current)))]
       [else current]))
   (sum-structure lis))
+
+; my-reverse
+; Returns a non-nested list in reverse order.
+; This bolt must avoid built-in reversal automation.
+; Examples:
+;   (my-reverse '(1 2 3 4)) ; returns: '(4 3 2 1)
+;   (my-reverse '())        ; returns: '()
+(define (my-reverse lis)
+  (define (reverse-into remaining reversed)
+    (cond
+      [(null? remaining) reversed]
+      [else
+       (reverse-into (cdr remaining)
+                     (cons (car remaining) reversed))]))
+  (reverse-into lis '()))

@@ -1,7 +1,18 @@
 # Changelog
 
-Status: the numeric procedure lane in Unit `U1` and the first list-processing bolt in Unit `U2` are now implemented and validated for the CMSC 124 Scheme/Racket programming exercise; `my-reverse` and final submission-readiness work are still pending.
+Status: Units `U1` and `U2` are now implemented and validated for the CMSC 124 Scheme/Racket programming exercise; all five required procedures are present; final submission-readiness work in `U3` is still pending.
 
+## v0.0.8
+
+### Added or Changed
+- Updated `scheme-pe02/California_Adeva_PE02.rkt` to add the fifth implemented coursework procedure: `my-reverse`.
+- Expanded `scheme-pe02/docs/design/u2/domain-design.md` and `scheme-pe02/docs/design/u2/logical-design.md` so Unit `U2` now carries the full design baseline for both list-processing bolts: `U2-B1` (`my-sums`) and `U2-B2` (`my-reverse`).
+- Added `scheme-pe02/docs/design/u2/adr/u2-b2-my-reverse-manual-reversal-adr.md` to record the chosen manual-reversal implementation approach for `my-reverse`.
+- Added `scheme-pe02/docs/traceability/u2/u2-b2-my-reverse-manual-reversal-traceability.md` with executed validation evidence for `T-09`, `T-10`, deployment check `DPL-03`, and ready-state ops signals.
+- Updated `README.md` version marker from `v0.0.7` to `v0.0.8` and refreshed the root status, artifact baseline, and roadmap text to reflect that Unit `U2` is now implemented and validated.
+
+### For Deletion
+- None from this task context (implementation and documentation updates only; no generated build artifacts were created).
 ## v0.0.7
 
 ### Added or Changed
