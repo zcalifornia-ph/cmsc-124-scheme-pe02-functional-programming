@@ -1,6 +1,17 @@
 # Changelog
 
-Status: Units `U1` and `U2`, plus Unit `U3` / Bolt `U3-B1`, are now implemented and validated for the CMSC 124 Scheme/Racket programming exercise; the final runtime validation and rubric closeout in `U3-B2` are still pending.
+Status: Units `U1`, `U2`, and `U3` are now implemented and validated for the CMSC 124 Scheme/Racket programming exercise; the submission artifact has passed final runtime validation and rubric closeout.
+
+## v0.0.10
+
+### Added or Changed
+- Expanded `scheme-pe02/docs/design/u3/domain-design.md` and `scheme-pe02/docs/design/u3/logical-design.md` so Unit `U3` now carries the full submission-readiness baseline, including the final validation sequence and closeout evidence model.
+- Added `scheme-pe02/docs/design/u3/adr/u3-b2-final-validation-and-rubric-closeout-adr.md` and `scheme-pe02/docs/traceability/u3/u3-b2-final-validation-and-rubric-closeout-traceability.md` to record the accepted `U3-B2` strategy and the executed evidence for `T-13`, `DPL-03`, `DPL-04`, `OPS-01`, `OPS-04`, and `OPS-05`.
+- Updated `README.md` version marker from `v0.0.9` to `v0.0.10` and refreshed the root status, artifact baseline, and roadmap text to reflect that final runtime validation and rubric closeout are complete.
+- Added `docs/version-v0-0-10-docs.md` to document the final `U3-B2` milestone and full coursework closeout in detail.
+
+### For Deletion
+- None from this task context (final validation, traceability, and release-documentation updates only; no generated build artifacts were created).
 
 ## v0.0.9
 

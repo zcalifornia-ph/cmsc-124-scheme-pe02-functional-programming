@@ -17,9 +17,9 @@
   <p align="center">
     Functional-programming solutions in Scheme/Racket for T-Ice, prime summation, factor counting, nested-list summation, and list reversal.
     <br />
-    Version: v0.0.9
+    Version: v0.0.10
     <br />
-    Status: Unit `U1`, Unit `U2`, and Unit `U3` / Bolt `U3-B1` are implemented and validated; final runtime validation and rubric closeout in `U3-B2` are still pending.
+    Status: Units `U1`, `U2`, and `U3` are implemented and validated; the single-file submission artifact has passed final runtime validation and rubric closeout.
     <br />
     <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming"><strong>Explore the repository »</strong></a>
     <br />
@@ -100,9 +100,9 @@ The repository now includes an AI-DLC planning, construction, and validation bas
 - `scheme-pe02/docs/design/u3/`
 - `scheme-pe02/docs/traceability/u3/`
 
-These artifacts establish the approved scope, requirements decomposition, and the design/traceability baseline for the completed numeric procedure lane in Unit `U1`, the completed list-processing lane in Unit `U2`, and the first submission-readiness bolt in Unit `U3`.
+These artifacts establish the approved scope, requirements decomposition, and the design/traceability baseline for the completed numeric procedure lane in Unit `U1`, the completed list-processing lane in Unit `U2`, and the completed submission-readiness lane in Unit `U3`, including the final validation and rubric-closeout bundle.
 
-The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it now includes validated implementations of `T-Ice`, `Sumprimes`, `count-factors`, `my-sums`, and `my-reverse`.
+The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it includes validated implementations of `T-Ice`, `Sumprimes`, `count-factors`, `my-sums`, and `my-reverse`, plus final local validation evidence proving the file loads cleanly and satisfies the rubric-visible documentation requirements.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,7 +168,7 @@ The grading rubric in the course brief emphasizes:
 - [x] Approve the `U2-B2` design package and implement `my-reverse`
 - [x] Complete Unit U2 list procedure validation
 - [x] Approve the `U3-B1` design package and implement the submission artifact structure/documentation pass
-- [ ] Complete the final runtime validation and rubric closeout in `U3-B2`
+- [x] Complete the final runtime validation and rubric closeout in `U3-B2`
 
 See the [open issues](https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/issues) for tracked changes and follow-up tasks.
 
