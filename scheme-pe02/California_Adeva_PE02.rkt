@@ -2,7 +2,7 @@
 
 ; California_Adeva_PE02.rkt
 ; CMSC 124 Programming Exercise 02
-; Current implemented scope: Unit U1 / Bolts U1-B1 (`T-Ice`) and U1-B2 (`Sumprimes`)
+; Current implemented scope: Unit U1 / Bolts U1-B1 (`T-Ice`), U1-B2 (`Sumprimes`), and U1-B3 (`count-factors`)
 
 ; T-Ice
 ; Displays values from 1 to n, replacing values divisible by:
@@ -53,3 +53,23 @@
       [else (sum-primes (add1 current) total)]))
   (display (sum-primes 1 0))
   (newline))
+
+; count-factors
+; Returns how many times m divides n while the quotient stays an integer.
+; If m is not a factor of n, the procedure displays "None" and returns 0.
+; Examples:
+;   (count-factors 4 48) ; returns: 2
+;   (count-factors 5 48) ; displays: None, returns: 0
+(define (count-factors m n)
+  (define (count-divisions current count)
+    (cond
+      [(zero? (remainder current m))
+       (count-divisions (quotient current m) (add1 count))]
+      [else count]))
+  (cond
+    [(zero? (remainder n m))
+     (count-divisions n 0)]
+    [else
+     (display "None")
+     (newline)
+     0]))

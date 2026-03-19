@@ -1,6 +1,19 @@
 # Changelog
 
-Status: the first two implementation bolts are now landed and validated for the CMSC 124 Scheme/Racket programming exercise; the remaining procedures are still pending.
+Status: the numeric procedure lane in Unit `U1` is now fully implemented and validated for the CMSC 124 Scheme/Racket programming exercise; the list procedures and final submission-readiness work are still pending.
+
+## v0.0.6
+
+### Added or Changed
+- Updated `scheme-pe02/California_Adeva_PE02.rkt` to add the third implemented coursework procedure: `count-factors`.
+- Expanded `scheme-pe02/docs/design/u1/domain-design.md` and `scheme-pe02/docs/design/u1/logical-design.md` to carry forward the complete `U1-B3` design baseline for repeated divisibility and the `"None"` no-factor path.
+- Added `scheme-pe02/docs/design/u1/adr/u1-b3-count-factors-repeated-divisibility-adr.md` to record the chosen `count-factors` implementation approach.
+- Updated `scheme-pe02/docs/traceability/u1/u1-b3-count-factors-repeated-divisibility-traceability.md` with executed validation evidence for `T-05`, `T-06`, deployment check `DPL-03`, and ready-state ops signals.
+- Updated `scheme-pe02/REQUIREMENTS.md` to mark `U1-B3` complete and record Unit `U1` completion evidence.
+- Updated `README.md` version marker from `v0.0.5` to `v0.0.6` and refreshed the root status/roadmap text to reflect that Unit `U1` is now implemented and validated.
+
+### For Deletion
+- None from this task context (implementation, requirements, and traceability updates only; no generated build artifacts were created).
 
 ## v0.0.5
 
@@ -62,3 +75,4 @@ Status: the first two implementation bolts are now landed and validated for the 
 
 ### For Deletion
 - None from this task context (documentation/bootstrap changes only; no generated build artifacts were created).
+
