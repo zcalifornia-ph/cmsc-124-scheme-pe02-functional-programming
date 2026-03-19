@@ -214,7 +214,7 @@ Apache License
 |#
 
 ; ----------------------------------------------------------------------
-; California_Adeva_PE02.rkt
+; Adeva_California_PE02.rkt
 ; CMSC 124 Programming Exercise 02
 ; Submission artifact: single-file #lang racket deliverable
 ; Required procedures: T-Ice, Sumprimes, count-factors, my-sums, my-reverse
