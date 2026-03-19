@@ -17,9 +17,9 @@
   <p align="center">
     Functional-programming solutions in Scheme/Racket for T-Ice, prime summation, factor counting, nested-list summation, and list reversal.
     <br />
-    Version: v0.0.8
+    Version: v0.0.9
     <br />
-    Status: Unit `U1` and Unit `U2` are implemented and validated; all five required procedures are present; submission-readiness work in `U3` is still pending.
+    Status: Unit `U1`, Unit `U2`, and Unit `U3` / Bolt `U3-B1` are implemented and validated; final runtime validation and rubric closeout in `U3-B2` are still pending.
     <br />
     <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming"><strong>Explore the repository »</strong></a>
     <br />
@@ -97,8 +97,10 @@ The repository now includes an AI-DLC planning, construction, and validation bas
 - `scheme-pe02/docs/traceability/u1/`
 - `scheme-pe02/docs/design/u2/`
 - `scheme-pe02/docs/traceability/u2/`
+- `scheme-pe02/docs/design/u3/`
+- `scheme-pe02/docs/traceability/u3/`
 
-These artifacts establish the approved scope, requirements decomposition, and the design/traceability baseline for the completed numeric procedure lane in Unit `U1` plus the completed list-processing lane in Unit `U2`.
+These artifacts establish the approved scope, requirements decomposition, and the design/traceability baseline for the completed numeric procedure lane in Unit `U1`, the completed list-processing lane in Unit `U2`, and the first submission-readiness bolt in Unit `U3`.
 
 The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it now includes validated implementations of `T-Ice`, `Sumprimes`, `count-factors`, `my-sums`, and `my-reverse`.
 
@@ -165,7 +167,8 @@ The grading rubric in the course brief emphasizes:
 - [x] Approve the `U2-B1` design package and implement `my-sums`
 - [x] Approve the `U2-B2` design package and implement `my-reverse`
 - [x] Complete Unit U2 list procedure validation
-- [ ] Close submission-readiness and rubric validation
+- [x] Approve the `U3-B1` design package and implement the submission artifact structure/documentation pass
+- [ ] Complete the final runtime validation and rubric closeout in `U3-B2`
 
 See the [open issues](https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/issues) for tracked changes and follow-up tasks.
 

@@ -1,6 +1,17 @@
 # Changelog
 
-Status: Units `U1` and `U2` are now implemented and validated for the CMSC 124 Scheme/Racket programming exercise; all five required procedures are present; final submission-readiness work in `U3` is still pending.
+Status: Units `U1` and `U2`, plus Unit `U3` / Bolt `U3-B1`, are now implemented and validated for the CMSC 124 Scheme/Racket programming exercise; the final runtime validation and rubric closeout in `U3-B2` are still pending.
+
+## v0.0.9
+
+### Added or Changed
+- Updated `scheme-pe02/California_Adeva_PE02.rkt` with the `U3-B1` submission-readiness pass, adding a visible header/context block, a clearly labeled `Additional Specification` section, and representative/boundary notes for all five required procedures.
+- Added `scheme-pe02/docs/design/u3/domain-design.md`, `scheme-pe02/docs/design/u3/logical-design.md`, and `scheme-pe02/docs/design/u3/adr/u3-b1-submission-artifact-structure-and-rubric-visible-enhancements-adr.md` to establish the first submission-readiness design baseline for Unit `U3`.
+- Added `scheme-pe02/docs/traceability/u3/u3-b1-submission-artifact-structure-and-rubric-visible-enhancements-traceability.md` with executed validation evidence for `T-11`, `T-12`, deployment checks `DPL-01`, `DPL-02`, `DPL-04`, and ready-state ops signals.
+- Updated `README.md` version marker from `v0.0.8` to `v0.0.9` and refreshed the root status, artifact baseline, and roadmap text to reflect that `U3-B1` is implemented and validated.
+
+### For Deletion
+- None from this task context (submission artifact structure and documentation updates only; no generated build artifacts were created).
 
 ## v0.0.8
 
@@ -13,6 +24,7 @@ Status: Units `U1` and `U2` are now implemented and validated for the CMSC 124 S
 
 ### For Deletion
 - None from this task context (implementation and documentation updates only; no generated build artifacts were created).
+
 ## v0.0.7
 
 ### Added or Changed
