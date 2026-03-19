@@ -17,9 +17,9 @@
   <p align="center">
     Functional-programming solutions in Scheme/Racket for T-Ice, prime summation, factor counting, nested-list summation, and list reversal.
     <br />
-    Version: v0.0.10
+    Version: v1.0.0
     <br />
-    Status: Units `U1`, `U2`, and `U3` are implemented and validated; the single-file submission artifact has passed final runtime validation and rubric closeout.
+    Status: stable `v1.0.0` publishing baseline; Units `U1`, `U2`, and `U3` are complete, and the single-file submission artifact has passed final runtime validation and rubric closeout.
     <br />
     <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming"><strong>Explore the repository »</strong></a>
     <br />
@@ -86,13 +86,11 @@ The expected submission is a single `.rkt` file named according to the course in
 - [Scheme](https://schemers.org/)
 - [Markdown](https://www.markdownguide.org/)
 
-### Current Artifact Baseline
+### Published Artifact Baseline
 
-The repository now includes an AI-DLC planning, construction, and validation baseline under `scheme-pe02/`:
+The repository now includes the published submission artifact plus supporting design and validation material under `scheme-pe02/`:
 
-- `scheme-pe02/ai-dlc-docs/plans/level-1-plan.md`
-- `scheme-pe02/ai-dlc-docs/requirements/INCEPTION.md`
-- `scheme-pe02/REQUIREMENTS.md`
+- the final single-file submission artifact
 - `scheme-pe02/docs/design/u1/`
 - `scheme-pe02/docs/traceability/u1/`
 - `scheme-pe02/docs/design/u2/`
@@ -102,7 +100,7 @@ The repository now includes an AI-DLC planning, construction, and validation bas
 
 These artifacts establish the approved scope, requirements decomposition, and the design/traceability baseline for the completed numeric procedure lane in Unit `U1`, the completed list-processing lane in Unit `U2`, and the completed submission-readiness lane in Unit `U3`, including the final validation and rubric-closeout bundle.
 
-The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it includes validated implementations of `T-Ice`, `Sumprimes`, `count-factors`, `my-sums`, and `my-reverse`, plus final local validation evidence proving the file loads cleanly and satisfies the rubric-visible documentation requirements.
+The current submission file is `scheme-pe02/California_Adeva_PE02.rkt`, and it includes validated implementations of `T-Ice`, `Sumprimes`, `count-factors`, `my-sums`, and `my-reverse`, plus final local validation evidence, an attribution header, and an embedded license block suited for publishing and review.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,7 +153,7 @@ The grading rubric in the course brief emphasizes:
 ## Roadmap
 
 - [x] Bootstrap repository governance and root documentation
-- [x] Create the Level 1 Plan, `INCEPTION.md`, and `REQUIREMENTS.md` for `scheme-pe02/`
+- [x] Create the initial planning and approved requirements baseline for `scheme-pe02/`
 - [x] Draft Unit `U1` / Bolt `U1-B1` design, ADR, and traceability artifacts
 - [x] Draft Unit `U1` / Bolt `U1-B2` design, ADR, and traceability artifacts
 - [x] Draft Unit `U1` / Bolt `U1-B3` design, ADR, and traceability artifacts
@@ -169,6 +167,7 @@ The grading rubric in the course brief emphasizes:
 - [x] Complete Unit U2 list procedure validation
 - [x] Approve the `U3-B1` design package and implement the submission artifact structure/documentation pass
 - [x] Complete the final runtime validation and rubric closeout in `U3-B2`
+- [x] Prepare the repository for a stable `v1.0.0` publishing baseline
 
 See the [open issues](https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/issues) for tracked changes and follow-up tasks.
 
@@ -177,7 +176,7 @@ See the [open issues](https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-fun
 ## Contributing
 
 This repository primarily tracks a course assignment.
-Small corrections and quality improvements are welcome, but changes that affect the graded solution should be discussed with the maintainer first.
+Small corrections and quality improvements are welcome, but changes that affect the graded solution should be discussed with the maintainers first.
 
 See `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SECURITY.md` for contribution standards, project conduct, and responsible disclosure guidance.
 
@@ -190,6 +189,13 @@ Distributed under the Apache-2.0 license. See `LICENSE.txt` for more information
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
+
+### Maintainers
+
+- Zildjian E. California
+- Jayrad P. Adeva
+
+### Primary Repository Contact
 
 Zildjian E. California
 

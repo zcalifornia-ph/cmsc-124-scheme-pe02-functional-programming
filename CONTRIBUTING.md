@@ -1,7 +1,12 @@
 # Contributing
 
 This repository primarily tracks a CMSC 124 programming exercise in Scheme/Racket.
-Corrections and quality improvements are welcome, but any change that could affect the graded solution should be discussed with the maintainer first.
+Corrections and quality improvements are welcome, but any change that could affect the graded solution should be discussed with the maintainers first.
+
+## Current Maintainers
+
+- Zildjian E. California
+- Jayrad P. Adeva
 
 ## Ground Rules
 

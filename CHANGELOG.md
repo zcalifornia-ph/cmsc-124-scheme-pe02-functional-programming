@@ -1,6 +1,18 @@
 # Changelog
 
-Status: Units `U1`, `U2`, and `U3` are now implemented and validated for the CMSC 124 Scheme/Racket programming exercise; the submission artifact has passed final runtime validation and rubric closeout.
+Status: stable `v1.0.0` publishing baseline for the completed CMSC 124 Scheme/Racket submission; the final single-file artifact and supporting public docs are ready for release.
+
+## v1.0.0
+
+### Added or Changed
+- Updated `README.md` version marker from `v0.0.10` to `v1.0.0` and refreshed the root status, published-artifact summary, and roadmap text to match a stable publishing baseline.
+- Updated `CHANGELOG.md` to introduce the `v1.0.0` release marker and to replace direct references to ignored internal planning/requirements paths with public-facing generic descriptions.
+- Updated `SECURITY.md` supported versions so the published `1.0.x` line is the active supported baseline and the earlier `0.0.x` line is treated as historical pre-release work.
+- Updated `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `README.md`, and `LICENSE.txt` so the public repository metadata now reflects the current maintainer set: Zildjian E. California and Jayrad P. Adeva.
+- Added a publish-ready attribution and embedded-license header to `scheme-pe02/California_Adeva_PE02.rkt` using the configured institutional attribution block and the root Apache license text.
+
+### For Deletion
+- None from this task context (publish-readiness documentation updates only; no generated build artifacts were created).
 
 ## v0.0.10
 
@@ -54,7 +66,7 @@ Status: Units `U1`, `U2`, and `U3` are now implemented and validated for the CMS
 - Expanded `scheme-pe02/docs/design/u1/domain-design.md` and `scheme-pe02/docs/design/u1/logical-design.md` to carry forward the complete `U1-B3` design baseline for repeated divisibility and the `"None"` no-factor path.
 - Added `scheme-pe02/docs/design/u1/adr/u1-b3-count-factors-repeated-divisibility-adr.md` to record the chosen `count-factors` implementation approach.
 - Updated `scheme-pe02/docs/traceability/u1/u1-b3-count-factors-repeated-divisibility-traceability.md` with executed validation evidence for `T-05`, `T-06`, deployment check `DPL-03`, and ready-state ops signals.
-- Updated `scheme-pe02/REQUIREMENTS.md` to mark `U1-B3` complete and record Unit `U1` completion evidence.
+- Updated the requirements baseline to mark `U1-B3` complete and record Unit `U1` completion evidence.
 - Updated `README.md` version marker from `v0.0.5` to `v0.0.6` and refreshed the root status/roadmap text to reflect that Unit `U1` is now implemented and validated.
 
 ### For Deletion
@@ -96,10 +108,7 @@ Status: Units `U1`, `U2`, and `U3` are now implemented and validated for the CMS
 ## v0.0.2
 
 ### Added or Changed
-- Added the `scheme-pe02/` project workspace with AI-DLC planning artifacts:
-  - `scheme-pe02/ai-dlc-docs/plans/level-1-plan.md`
-  - `scheme-pe02/ai-dlc-docs/requirements/INCEPTION.md`
-  - `scheme-pe02/REQUIREMENTS.md`
+- Added the `scheme-pe02/` project workspace with the initial planning and requirements baseline for the coursework scope.
 - Added Unit `U1` / Bolt `U1-B1` pre-coding construction artifacts:
   - `scheme-pe02/docs/design/u1/domain-design.md`
   - `scheme-pe02/docs/design/u1/logical-design.md`

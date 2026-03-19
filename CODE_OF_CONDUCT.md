@@ -25,13 +25,18 @@ We expect respectful, harassment-free, and academically honest collaboration acr
 
 This Code of Conduct applies to all project spaces, including issues, pull requests, reviews, discussions, and documentation updates associated with this repository.
 
+## Maintainers
+
+- Zildjian E. California
+- Jayrad P. Adeva
+
 ## Reporting
 
-Report conduct concerns to `zecalifornia@up.edu.ph`.
+Report conduct concerns to `zecalifornia@up.edu.ph` for the maintainers.
 Include relevant links, screenshots, logs, and context when possible.
 Good-faith reports will be handled as confidentially as practical.
 
 ## Enforcement
 
-The maintainer may remove content, pause discussions, reject contributions, or block participation when necessary to protect the project and its contributors.
+The maintainers may remove content, pause discussions, reject contributions, or block participation when necessary to protect the project and its contributors.
 Enforcement decisions prioritize safety, fairness, and proportionality.
