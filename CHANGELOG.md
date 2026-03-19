@@ -1,15 +1,142 @@
 # Changelog
 
-Status: initial bootstrap for CMSC 124 PE02 Scheme.
+Status: stable `v1.0.1` documentation baseline for the completed CMSC 124 Scheme/Racket submission; the published artifact and root docs now include corrected clone-facing run guidance.
+
+## v1.0.1
+
+### Added or Changed
+- Updated `README.md` version marker from `v1.0.0` to `v1.0.1`.
+- Corrected the published submission filename reference in `README.md` from `scheme-pe02/California_Adeva_PE02.rkt` to `scheme-pe02/Adeva_California_PE02.rkt`.
+- Expanded `README.md` setup guidance with clone-ready commands for loading the Racket file, handling the common Windows `PATH` case, entering the module namespace interactively, and running the required procedures from the terminal or DrRacket.
+- Added `docs/version-v1-0-1-docs.md` with the detailed release note for this documentation-only follow-up.
+
+### For Deletion
+- None from this task context (documentation-only changes; no generated build artifacts were created).
+
+## v1.0.0
+
+### Added or Changed
+- Updated `README.md` version marker from `v0.0.10` to `v1.0.0` and refreshed the root status, published-artifact summary, and roadmap text to match a stable publishing baseline.
+- Updated `CHANGELOG.md` to introduce the `v1.0.0` release marker and to replace direct references to ignored internal planning/requirements paths with public-facing generic descriptions.
+- Updated `SECURITY.md` supported versions so the published `1.0.x` line is the active supported baseline and the earlier `0.0.x` line is treated as historical pre-release work.
+- Updated `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `README.md`, and `LICENSE.txt` so the public repository metadata now reflects the current maintainer set: Zildjian E. California and Jayrad P. Adeva.
+- Added a publish-ready attribution and embedded-license header to `scheme-pe02/California_Adeva_PE02.rkt` using the configured institutional attribution block and the root Apache license text.
+
+### For Deletion
+- None from this task context (publish-readiness documentation updates only; no generated build artifacts were created).
+
+## v0.0.10
+
+### Added or Changed
+- Expanded `scheme-pe02/docs/design/u3/domain-design.md` and `scheme-pe02/docs/design/u3/logical-design.md` so Unit `U3` now carries the full submission-readiness baseline, including the final validation sequence and closeout evidence model.
+- Added `scheme-pe02/docs/design/u3/adr/u3-b2-final-validation-and-rubric-closeout-adr.md` and `scheme-pe02/docs/traceability/u3/u3-b2-final-validation-and-rubric-closeout-traceability.md` to record the accepted `U3-B2` strategy and the executed evidence for `T-13`, `DPL-03`, `DPL-04`, `OPS-01`, `OPS-04`, and `OPS-05`.
+- Updated `README.md` version marker from `v0.0.9` to `v0.0.10` and refreshed the root status, artifact baseline, and roadmap text to reflect that final runtime validation and rubric closeout are complete.
+- Added `docs/version-v0-0-10-docs.md` to document the final `U3-B2` milestone and full coursework closeout in detail.
+
+### For Deletion
+- None from this task context (final validation, traceability, and release-documentation updates only; no generated build artifacts were created).
+
+## v0.0.9
+
+### Added or Changed
+- Updated `scheme-pe02/California_Adeva_PE02.rkt` with the `U3-B1` submission-readiness pass, adding a visible header/context block, a clearly labeled `Additional Specification` section, and representative/boundary notes for all five required procedures.
+- Added `scheme-pe02/docs/design/u3/domain-design.md`, `scheme-pe02/docs/design/u3/logical-design.md`, and `scheme-pe02/docs/design/u3/adr/u3-b1-submission-artifact-structure-and-rubric-visible-enhancements-adr.md` to establish the first submission-readiness design baseline for Unit `U3`.
+- Added `scheme-pe02/docs/traceability/u3/u3-b1-submission-artifact-structure-and-rubric-visible-enhancements-traceability.md` with executed validation evidence for `T-11`, `T-12`, deployment checks `DPL-01`, `DPL-02`, `DPL-04`, and ready-state ops signals.
+- Updated `README.md` version marker from `v0.0.8` to `v0.0.9` and refreshed the root status, artifact baseline, and roadmap text to reflect that `U3-B1` is implemented and validated.
+
+### For Deletion
+- None from this task context (submission artifact structure and documentation updates only; no generated build artifacts were created).
+
+## v0.0.8
+
+### Added or Changed
+- Updated `scheme-pe02/California_Adeva_PE02.rkt` to add the fifth implemented coursework procedure: `my-reverse`.
+- Expanded `scheme-pe02/docs/design/u2/domain-design.md` and `scheme-pe02/docs/design/u2/logical-design.md` so Unit `U2` now carries the full design baseline for both list-processing bolts: `U2-B1` (`my-sums`) and `U2-B2` (`my-reverse`).
+- Added `scheme-pe02/docs/design/u2/adr/u2-b2-my-reverse-manual-reversal-adr.md` to record the chosen manual-reversal implementation approach for `my-reverse`.
+- Added `scheme-pe02/docs/traceability/u2/u2-b2-my-reverse-manual-reversal-traceability.md` with executed validation evidence for `T-09`, `T-10`, deployment check `DPL-03`, and ready-state ops signals.
+- Updated `README.md` version marker from `v0.0.7` to `v0.0.8` and refreshed the root status, artifact baseline, and roadmap text to reflect that Unit `U2` is now implemented and validated.
+
+### For Deletion
+- None from this task context (implementation and documentation updates only; no generated build artifacts were created).
+
+## v0.0.7
+
+### Added or Changed
+- Updated `scheme-pe02/California_Adeva_PE02.rkt` to add the fourth implemented coursework procedure: `my-sums`.
+- Added `scheme-pe02/docs/design/u2/domain-design.md`, `scheme-pe02/docs/design/u2/logical-design.md`, and `scheme-pe02/docs/design/u2/adr/u2-b1-my-sums-nested-accumulation-adr.md` to establish the first list-processing bolt design baseline.
+- Added `scheme-pe02/docs/traceability/u2/u2-b1-my-sums-nested-accumulation-traceability.md` with executed validation evidence for `T-07`, `T-08`, deployment check `DPL-03`, and ready-state ops signals.
+- Updated `README.md` version marker from `v0.0.6` to `v0.0.7` and refreshed the root status, artifact baseline, usage example, and roadmap text to reflect that `U2-B1` is implemented and validated.
+
+### For Deletion
+- None from this task context (implementation and documentation updates only; no generated build artifacts were created).
+
+## v0.0.6
+
+### Added or Changed
+- Updated `scheme-pe02/California_Adeva_PE02.rkt` to add the third implemented coursework procedure: `count-factors`.
+- Expanded `scheme-pe02/docs/design/u1/domain-design.md` and `scheme-pe02/docs/design/u1/logical-design.md` to carry forward the complete `U1-B3` design baseline for repeated divisibility and the `"None"` no-factor path.
+- Added `scheme-pe02/docs/design/u1/adr/u1-b3-count-factors-repeated-divisibility-adr.md` to record the chosen `count-factors` implementation approach.
+- Updated `scheme-pe02/docs/traceability/u1/u1-b3-count-factors-repeated-divisibility-traceability.md` with executed validation evidence for `T-05`, `T-06`, deployment check `DPL-03`, and ready-state ops signals.
+- Updated the requirements baseline to mark `U1-B3` complete and record Unit `U1` completion evidence.
+- Updated `README.md` version marker from `v0.0.5` to `v0.0.6` and refreshed the root status/roadmap text to reflect that Unit `U1` is now implemented and validated.
+
+### For Deletion
+- None from this task context (implementation, requirements, and traceability updates only; no generated build artifacts were created).
+
+## v0.0.5
+
+### Added or Changed
+- Updated `scheme-pe02/California_Adeva_PE02.rkt` to add the second implemented coursework procedure: `Sumprimes`.
+- Updated `scheme-pe02/docs/traceability/u1/u1-b2-sumprimes-display-contract-traceability.md` with executed validation evidence for `T-03`, `T-04`, deployment check `DPL-03`, and ready-state ops signals.
+- Updated `README.md` version marker from `v0.0.4` to `v0.0.5` and refreshed the root status/roadmap text to reflect that `U1-B2` is implemented and validated.
+
+### For Deletion
+- None from this task context (implementation and traceability updates only; no generated build artifacts were created).
+
+## v0.0.4
+
+### Added or Changed
+- Added `scheme-pe02/California_Adeva_PE02.rkt` with the first implemented coursework procedure: `T-Ice`.
+- Updated `scheme-pe02/docs/traceability/u1/u1-b1-t-ice-output-flow-traceability.md` with executed validation evidence for `T-01`, `T-02`, deployment check `DPL-03`, and ready-state ops signals.
+- Updated `README.md` version marker from `v0.0.3` to `v0.0.4` and refreshed the root status/roadmap text to reflect that `U1-B1` is implemented and validated.
+
+### For Deletion
+- None from this task context (implementation and traceability updates only; no generated build artifacts were created).
+
+## v0.0.3
+
+### Added or Changed
+- Expanded `scheme-pe02/docs/design/u1/domain-design.md` to carry forward both prepared numeric/display bolts in Unit `U1`, covering `T-Ice` and `Sumprimes`.
+- Expanded `scheme-pe02/docs/design/u1/logical-design.md` to add the `U1-B2` implementation shape, validation plan, and output-contract handling for `Sumprimes`.
+- Added the `U1-B2` bolt-specific construction artifacts:
+  - `scheme-pe02/docs/design/u1/adr/u1-b2-sumprimes-display-contract-adr.md`
+  - `scheme-pe02/docs/traceability/u1/u1-b2-sumprimes-display-contract-traceability.md`
+- Updated `README.md` version marker from `v0.0.2` to `v0.0.3` and refreshed status/roadmap text to reflect the completed `U1-B2` design-preparation milestone.
+
+### For Deletion
+- None from this task context (design and traceability documentation only; no generated build artifacts were created).
+
+## v0.0.2
+
+### Added or Changed
+- Added the `scheme-pe02/` project workspace with the initial planning and requirements baseline for the coursework scope.
+- Added Unit `U1` / Bolt `U1-B1` pre-coding construction artifacts:
+  - `scheme-pe02/docs/design/u1/domain-design.md`
+  - `scheme-pe02/docs/design/u1/logical-design.md`
+  - `scheme-pe02/docs/design/u1/adr/u1-b1-t-ice-output-flow-adr.md`
+  - `scheme-pe02/docs/traceability/u1/u1-b1-t-ice-output-flow-traceability.md`
+- Updated `README.md` version marker from `v0.0.1` to `v0.0.2` and refreshed status/roadmap text to reflect the new planning and build-preparation baseline.
+- Refreshed `repo/images/project_screen.png` to match the current project presentation asset.
+
+### For Deletion
+- None from this task context (planning/design documentation and screenshot refresh only; no generated build artifacts were created).
 
 ## v0.0.1
 
 ### Added or Changed
-- Bootstrapped the root documentation from `agent/init.cfg`.
-- Replaced the placeholder README with project-specific guidance for the Scheme/Racket exercise.
-- Added project governance files: `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, and `SECURITY.md`.
-- Filled the Apache-2.0 license notice in `LICENSE.txt`.
-- Added a `.gitignore` for local workflow files, editor debris, and Racket build artifacts.
+- Initialized `README.md` with the project overview, exercise requirements, setup guidance, and maintainer contact details.
+- Initialized `CHANGELOG.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SECURITY.md` with repository-specific governance and support content.
+- Added a root `.gitignore` that hides internal workflow files and ignores generated Racket compilation artifacts.
 
 ### For Deletion
-- None.
+- None from this task context (documentation/bootstrap changes only; no generated build artifacts were created).

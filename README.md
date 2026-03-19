@@ -1,86 +1,257 @@
-# CMSC 124 PE02 Scheme
+<a id="readme-top"></a>
 
-Programming Exercise 02 in Scheme/Racket covering `T-Ice`, sum of primes, factor counting, nested list summation, and list reversal using a functional programming approach.
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Apache-2.0][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-Status: initial bootstrap (`v0.0.1`)
-Maintainer: Zildjian E. California (`@zcalifornia_`)
-Repository: https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming
-Screenshot path: `repo/images/`
+##
+[![CMSC 124 PE02 Scheme Screenshot][product-screenshot]](https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming)
+##
 
-## Overview
+<div align="center">
+<h3 align="center">CMSC 124 PE02 Scheme</h3>
 
-This repository is set up for a single Racket source file that solves the assignment using functional programming ideas. The project currently contains documentation only; implementation can be added in the repository root or in the instructor-specified file location.
+  <p align="center">
+    Functional-programming solutions in Scheme/Racket for T-Ice, prime summation, factor counting, nested-list summation, and list reversal.
+    <br />
+    Version: v1.0.1
+    <br />
+    Status: stable `v1.0.1` documentation refresh; Units `U1`, `U2`, and `U3` remain complete, and the published submission artifact now has clone-ready run/load instructions in the root docs.
+    <br />
+    <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming"><strong>Explore the repository »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming">View Repository</a>
+    &middot;
+    <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/issues">Report Bug</a>
+    &middot;
+    <a href="https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/issues">Request Feature</a>
+  </p>
+</div>
 
-## Assignment Rules
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#exercise-coverage">Exercise Coverage</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#setup">Setup</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-- Use one `.rkt` file for the whole solution.
-- Use a functional programming approach.
-- Do not introduce global identifiers.
-- Keep helper procedures pure where possible.
-- `my-reverse` must not rely on a built-in reverse helper.
-- The submission file name should follow the surname-plus-PE pattern, such as `<Surname>_PE02.rkt`.
+## About The Project
 
-## Required Procedures
+This repository tracks **Programming Exercise 02** for **CMSC 124: Design and Implementation of Programming Languages**.
+The exercise focuses on writing Scheme/Racket code in a functional style, with one source file containing all required procedures and no global identifiers.
 
-| Procedure | Responsibility |
+The expected submission is a single `.rkt` file named according to the course instructions, for example:
+
+- `Rizal_PE02.rkt` for an individual submission
+- `Bonifacio_Rizal_PE02.rkt` for a pair or group submission
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Exercise Coverage
+
+| Procedure | Requirement |
 | --- | --- |
-| `T-Ice n` | Display `1` through `n`, replacing values divisible by 2 with `T`, divisible by 3 with `ICE`, and divisible by both with `T-ICE`. |
-| `Sumprimes n` | Display the sum of all prime numbers from `1` to `n`. |
-| `count-factors m n` | Return how many times `m` divides `n`; display `None` when `m` is not a factor of `n`. |
-| `my-sums lis` | Return the sum of all numbers in `lis`, including numbers inside nested lists. |
-| `my-reverse lis` | Return a reversed version of `lis` as a list. |
+| `T-Ice` | Display values from `1` to `n`, substituting `T`, `ICE`, or `T-ICE` based on divisibility by `2` and `3`. |
+| `Sumprimes` | Display the sum of all prime numbers from `1` to `n`. |
+| `count-factors` | Count how many times `m` divides `n`; display `None` when `m` is not a factor of `n`. |
+| `my-sums` | Return the sum of all numeric values in a possibly nested list. |
+| `my-reverse` | Return the reverse of a non-nested list without using built-in reverse automation. |
 
-## Suggested Workflow
+### Built With
 
-1. Implement `T-Ice`.
-2. Implement `Sumprimes`.
-3. Implement `count-factors`.
-4. Implement `my-sums`.
-5. Implement `my-reverse`.
-6. Test each procedure in DrRacket or the Racket REPL.
+- [Racket](https://racket-lang.org/)
+- [Scheme](https://schemers.org/)
+- [Markdown](https://www.markdownguide.org/)
 
-## Quick Examples
+### Published Artifact Baseline
 
-```racket
-(T-Ice 8)
-; 1 T ICE T 5 T-ICE 7 T
+The repository now includes the published submission artifact plus supporting design and validation material under `scheme-pe02/`:
 
-(Sumprimes 10)
-; 17
+- the final single-file submission artifact
+- `scheme-pe02/docs/design/u1/`
+- `scheme-pe02/docs/traceability/u1/`
+- `scheme-pe02/docs/design/u2/`
+- `scheme-pe02/docs/traceability/u2/`
+- `scheme-pe02/docs/design/u3/`
+- `scheme-pe02/docs/traceability/u3/`
 
-(count-factors 4 48)
-; 2
+These artifacts establish the approved scope, requirements decomposition, and the design/traceability baseline for the completed numeric procedure lane in Unit `U1`, the completed list-processing lane in Unit `U2`, and the completed submission-readiness lane in Unit `U3`, including the final validation and rubric-closeout bundle.
 
-(my-sums '(1 (2 3) (4 (5))))
-; 15
+The current submission file is `scheme-pe02/Adeva_California_PE02.rkt`, and it includes validated implementations of `T-Ice`, `Sumprimes`, `count-factors`, `my-sums`, and `my-reverse`, plus final local validation evidence, an attribution header, and an embedded license block suited for publishing and review.
 
-(my-reverse '(a b c d))
-; '(d c b a)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Getting Started
+
+### Prerequisites
+
+- [Racket](https://racket-lang.org/download/) or DrRacket installed locally
+- Git, if you want to clone and track changes from GitHub
+
+### Setup
+
+1. Clone the repository.
+   ```sh
+   git clone https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming.git
+   cd cmsc-124-scheme-pe02-functional-programming
+   ```
+2. The tracked submission file in this repository is `scheme-pe02/Adeva_California_PE02.rkt`.
+3. Load the file with Racket to confirm it runs without errors.
+   This file only defines procedures, so a successful run prints no output by itself.
+   ```sh
+   racket scheme-pe02/Adeva_California_PE02.rkt
+   ```
+   On Windows, if `racket` is not on your `PATH`, use:
+   ```powershell
+   & "C:\Program Files\Racket\Racket.exe" scheme-pe02/Adeva_California_PE02.rkt
+   ```
+4. To call the procedures from the terminal, start an interactive session in the file's namespace:
+   ```sh
+   racket -i -l racket/enter -e '(enter! (file "scheme-pe02/Adeva_California_PE02.rkt"))'
+   ```
+   On Windows, if needed:
+   ```powershell
+   & "C:\Program Files\Racket\Racket.exe" -i -l racket/enter -e '(enter! (file "scheme-pe02/Adeva_California_PE02.rkt"))'
+   ```
+   Then run any of the required procedures at the prompt, such as:
+   ```scheme
+   (T-Ice 8)
+   (Sumprimes 10)
+   (count-factors 4 48)
+   (my-sums '(1 (2 (3 4)) 5))
+   (my-reverse '(1 2 3 4))
+   ```
+5. You can also open `scheme-pe02/Adeva_California_PE02.rkt` in DrRacket, click **Run**, and execute the same sample calls in the interactions pane.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Usage
+
+After implementing the required procedures, typical interactions should look like this:
+
+```scheme
+(T-Ice 8)                ; displays: 1 T ICE T 5 T-ICE 7 T
+(Sumprimes 10)           ; displays: 17
+(count-factors 4 48)     ; returns: 2
+(my-sums '(1 (2 (3 4)) 5)) ; returns: 15
+(my-reverse '(1 2 3 4))  ; returns: '(4 3 2 1)
 ```
 
-## Project Status
+The grading rubric in the course brief emphasizes:
 
-- Version: `0.0.1`
-- Stage: bootstrap
-- Screenshot assets, when added, should live under `repo/images/`
+- complete satisfaction of the program specification,
+- correct execution without errors,
+- clear documentation,
+- readable and consistent coding style,
+- bonus credit for high-quality work that exceeds the base specification.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Roadmap
+
+- [x] Bootstrap repository governance and root documentation
+- [x] Create the initial planning and approved requirements baseline for `scheme-pe02/`
+- [x] Draft Unit `U1` / Bolt `U1-B1` design, ADR, and traceability artifacts
+- [x] Draft Unit `U1` / Bolt `U1-B2` design, ADR, and traceability artifacts
+- [x] Draft Unit `U1` / Bolt `U1-B3` design, ADR, and traceability artifacts
+- [x] Approve the `U1-B1` design package and implement `T-Ice`
+- [x] Approve the `U1-B2` design package and implement `Sumprimes`
+- [x] Approve the `U1-B3` design package and implement `count-factors`
+- [x] Complete Unit `U1` numeric procedure validation
+- [x] Draft Unit `U2` / Bolt `U2-B1` design, ADR, and traceability artifacts
+- [x] Approve the `U2-B1` design package and implement `my-sums`
+- [x] Approve the `U2-B2` design package and implement `my-reverse`
+- [x] Complete Unit U2 list procedure validation
+- [x] Approve the `U3-B1` design package and implement the submission artifact structure/documentation pass
+- [x] Complete the final runtime validation and rubric closeout in `U3-B2`
+- [x] Prepare the repository for a stable `v1.0.0` publishing baseline
+- [x] Document clone-ready run/load instructions for `scheme-pe02/Adeva_California_PE02.rkt`
+
+See the [open issues](https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/issues) for tracked changes and follow-up tasks.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
-Read `CONTRIBUTING.md` before opening a pull request. Keep changes focused and preserve the assignment rules above.
+This repository primarily tracks a course assignment.
+Small corrections and quality improvements are welcome, but changes that affect the graded solution should be discussed with the maintainers first.
 
-## Security
+See `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SECURITY.md` for contribution standards, project conduct, and responsible disclosure guidance.
 
-Report security concerns privately through `SECURITY.md`.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
-Released under the Apache-2.0 license. See `LICENSE.txt`.
+Distributed under the Apache-2.0 license. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
 
-Maintainer: Zildjian E. California  
-Email: zecalifornia@up.edu.ph  
-LinkedIn: `zcalifornia`  
-ORCID: `0009-0002-2357-7606`  
-ResearchGate: `Zildjian-California`  
-Twitter: `zcalifornia_`
+### Maintainers
+
+- Zildjian E. California
+- Jayrad P. Adeva
+
+### Primary Repository Contact
+
+Zildjian E. California
+
+- Email: `zecalifornia@up.edu.ph`
+- GitHub: [zcalifornia-ph](https://github.com/zcalifornia-ph)
+- LinkedIn: [zcalifornia](https://linkedin.com/in/zcalifornia)
+- ORCID: [0009-0002-2357-7606](https://orcid.org/0009-0002-2357-7606)
+- ResearchGate: [Zildjian-California](https://www.researchgate.net/profile/Zildjian-California)
+- Twitter: [@zcalifornia_](https://twitter.com/zcalifornia_)
+
+Project Link: [https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming](https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Acknowledgments
+
+- CMSC 124 course materials and grading rubric
+- The Racket language and tooling ecosystem
+- Functional-programming teaching resources that shaped the exercise design
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[contributors-shield]: https://img.shields.io/github/contributors/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming.svg?style=for-the-badge
+[contributors-url]: https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming.svg?style=for-the-badge
+[forks-url]: https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/network/members
+[stars-shield]: https://img.shields.io/github/stars/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming.svg?style=for-the-badge
+[stars-url]: https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/stargazers
+[issues-shield]: https://img.shields.io/github/issues/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming.svg?style=for-the-badge
+[issues-url]: https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/issues
+[license-shield]: https://img.shields.io/github/license/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming.svg?style=for-the-badge
+[license-url]: https://github.com/zcalifornia-ph/cmsc-124-scheme-pe02-functional-programming/blob/main/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/zcalifornia
+[product-screenshot]: repo/images/project_screen.png
+
+
+
