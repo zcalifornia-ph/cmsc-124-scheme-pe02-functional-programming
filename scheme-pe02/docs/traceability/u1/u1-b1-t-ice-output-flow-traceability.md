@@ -1,6 +1,6 @@
 # U1-B1 Traceability
 
-Status: Draft for Validation
+Status: Completed and Validated on March 19, 2026
 Unit ID: `U1`
 Bolt ID: `U1-B1`
 Bolt Name: `T-Ice` output flow
@@ -21,26 +21,26 @@ Bolt Name: `T-Ice` output flow
 
 ## Bolt Checklist
 
-- [ ] Design: define the divisibility rules, token precedence, and print-order contract in `U1-domain-design.md`
-- [ ] Implement: add `(T-Ice n)` using a functional, no-global-state approach inside the single `.rkt` file
-- [ ] Test: execute `T-01` and `T-02`, recording expected vs observed printed output
-- [ ] Docs: add inline comments and a representative usage comment for `T-Ice`
-- [ ] Review: confirm formatting matches approved assumption Q3 and update validation notes
+- [x] Design: defined the divisibility rules, token precedence, and print-order contract in `U1-domain-design.md`
+- [x] Implement: added `(T-Ice n)` using a functional, no-global-state approach inside the single `.rkt` file
+- [x] Test: executed `T-01` and `T-02`, recording expected vs observed printed output
+- [x] Docs: added inline comments and a representative usage comment for `T-Ice`
+- [x] Review: confirmed formatting matches approved assumption Q3 and updated validation notes
 
 ## Context Summary
 
-- There is no existing `.rkt` implementation in `scheme-pe02/`; the bolt starts from green-field code.
-- The only resolved requirements artifact is `scheme-pe02/REQUIREMENTS.md`.
+- The bolt started from green-field code and now has a concrete implementation file.
+- The resolved requirements artifact is `scheme-pe02/REQUIREMENTS.md`.
 - The implementation target is `scheme-pe02/California_Adeva_PE02.rkt`.
-- This bolt affects only the `T-Ice` public procedure and its supporting local helper logic.
-- Output format is grading-sensitive and must be verified from printed output, not inferred from logic alone.
-- No external packages, configuration files, services, or runtime integrations are involved.
-- Future U1 bolts will add `Sumprimes` and `count-factors`, but they are explicitly out of scope for this bolt.
-- Build-task protocol requires design and ADR approval before heavy coding begins.
+- This bolt affected only the `T-Ice` public procedure and its supporting local helper logic.
+- Output format was grading-sensitive and was verified from printed output rather than inferred from logic alone.
+- No external packages, configuration files, services, or runtime integrations were involved.
+- Future U1 bolts will add `Sumprimes` and `count-factors`, but they remain out of scope for this completed bolt.
+- The approved design and ADR were followed without requiring a material redesign during implementation.
 
 ## Affected Files and Modules
 
-- Planned code file: `scheme-pe02/California_Adeva_PE02.rkt`
+- Code file: `scheme-pe02/California_Adeva_PE02.rkt`
 - Design artifact: `scheme-pe02/docs/design/u1/domain-design.md`
 - Design artifact: `scheme-pe02/docs/design/u1/logical-design.md`
 - ADR artifact: `scheme-pe02/docs/design/u1/adr/u1-b1-t-ice-output-flow-adr.md`
@@ -53,26 +53,38 @@ Bolt Name: `T-Ice` output flow
 - External dependencies: none
 - Integration points: none beyond local Racket execution
 
-## Test Evidence Placeholders
+## Executed Test Evidence
 
-| Test ID | Planned Check | Expected Evidence | Result |
+| Test ID | Executed Check | Observed Evidence | Result |
 | --- | --- | --- | --- |
-| T-01 | `(T-Ice 8)` | exact printed sequence `1 T ICE T 5 T-ICE 7 T` | Pending |
-| T-02 | `(T-Ice 1)` | exact printed sequence `1` | Pending |
+| T-01 | Namespace-driven Racket invocation of `(T-Ice 8)` | Printed sequence matched `1 T ICE T 5 T-ICE 7 T` between REPL prompts. | Pass |
+| T-02 | Namespace-driven Racket invocation of `(T-Ice 1)` | Printed sequence matched `1` between REPL prompts. | Pass |
 
-## Deployment Handoff Placeholders
+## Acceptance Run Summary
+
+- Story satisfied: `US-01`
+- Acceptance criteria satisfied: range iteration, divisibility mapping, both-divisible precedence, numeric fallback path, example output for `n = 8`, and approved spacing behavior
+- Linked NFR checks satisfied for this bolt: `NFR-01`, `NFR-02`, `NFR-04`, `NFR-07`
+
+## Deployment Handoff Notes
 
 | Deployment Check ID | Handoff Note | Status |
 | --- | --- | --- |
-| DPL-03 | Confirm the final file loads and runs locally under `#lang racket` after implementation | Pending |
+| DPL-03 | Direct local load via `C:\Program Files\Racket\Racket.exe scheme-pe02\California_Adeva_PE02.rkt` exited with code `0` and no load errors. | Ready |
 
-## Ops Signal Placeholders
+## Ops Signal Notes
 
 | Ops Signal ID | Signal / Observable Hook | Status |
 | --- | --- | --- |
-| OPS-01 | Local file load/run without blocking errors | Pending |
-| OPS-02 | Stable printed output for representative `T-Ice` runs | Pending |
+| OPS-01 | Local file load/run without blocking errors | Ready |
+| OPS-02 | Stable printed output for representative `T-Ice` runs | Ready |
 
-## Human Validation Required
+## Result Summary
 
-Approve this traceability baseline together with the domain design, logical design, and ADR before heavy coding begins for `U1-B1`.
+`U1-B1` is implemented and validated. Proof lives in:
+
+- `scheme-pe02/California_Adeva_PE02.rkt`
+- `scheme-pe02/docs/design/u1/domain-design.md`
+- `scheme-pe02/docs/design/u1/logical-design.md`
+- `scheme-pe02/docs/design/u1/adr/u1-b1-t-ice-output-flow-adr.md`
+- `scheme-pe02/docs/traceability/u1/u1-b1-t-ice-output-flow-traceability.md`

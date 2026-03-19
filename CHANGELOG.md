@@ -1,6 +1,16 @@
 # Changelog
 
-Status: AI-DLC planning baseline and the first two U1 design baselines are prepared for the CMSC 124 Scheme/Racket programming exercise; implementation is staged but not yet coded.
+Status: the first implementation bolt is now landed and validated for the CMSC 124 Scheme/Racket programming exercise; the remaining procedures are still pending.
+
+## v0.0.4
+
+### Added or Changed
+- Added `scheme-pe02/California_Adeva_PE02.rkt` with the first implemented coursework procedure: `T-Ice`.
+- Updated `scheme-pe02/docs/traceability/u1/u1-b1-t-ice-output-flow-traceability.md` with executed validation evidence for `T-01`, `T-02`, deployment check `DPL-03`, and ready-state ops signals.
+- Updated `README.md` version marker from `v0.0.3` to `v0.0.4` and refreshed the root status/roadmap text to reflect that `U1-B1` is implemented and validated.
+
+### For Deletion
+- None from this task context (implementation and traceability updates only; no generated build artifacts were created).
 
 ## v0.0.3
 
