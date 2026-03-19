@@ -2,27 +2,36 @@
 
 ## Scope
 
-This repository is a class exercise, so security concerns usually show up as incorrect input handling, accidental data exposure, or unsafe behavior in helper scripts.
+This repository is a coursework-focused Scheme/Racket project.
+Security reporting for this repository should cover the source code, documentation, repository automation, and published artifacts maintained here.
+
+## Supported Versions
+
+| Version | Supported |
+| --- | --- |
+| 0.0.x | :white_check_mark: |
+| Unreleased drafts before `v0.0.1` | :x: |
 
 ## Reporting a Vulnerability
 
-Do not open a public issue for a security concern.
+Do not open public issues for suspected vulnerabilities.
+Send reports to `zecalifornia@up.edu.ph` and include:
 
-Send a private report to `zecalifornia@up.edu.ph` with:
-- the file or procedure involved
-- the input that triggered the issue
-- the observed behavior
-- the expected behavior
-- any screenshot or log that helps reproduce the problem
+- the affected file, function, or component,
+- reproduction steps or proof of concept,
+- the impact and severity you believe applies,
+- any suggested mitigation, if available.
 
-## Response Goals
+## Response Targets
 
-- Acknowledgment: within 72 hours
-- Triage: within 7 days
-- Fix plan or mitigation: as soon as practical after triage
+- acknowledgment within 72 hours,
+- initial triage within 7 calendar days,
+- best-effort remediation plan within 30 calendar days.
 
-## Safe Disclosure
+Complex issues may require more time, but status updates will be shared during triage and remediation.
 
-- Avoid destructive proof-of-concepts.
-- Do not test against systems you do not own or have permission to use.
-- Wait for coordination before public disclosure.
+## Safe Handling and Disclosure
+
+- Avoid privacy violations, destructive testing, or service disruption while validating an issue.
+- Coordinate disclosure timing with the maintainer after a fix or mitigation is ready.
+- Reporter credit will be given when requested and appropriate.

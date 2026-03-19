@@ -1,34 +1,37 @@
 # Code of Conduct
 
-## Purpose
+## Our Commitment
 
-This repository is a course exercise. The goal is to keep collaboration respectful, useful, and honest.
+This repository is maintained as a course-related software project.
+We expect respectful, harassment-free, and academically honest collaboration across issues, pull requests, reviews, documentation, and other project discussions.
 
 ## Expected Behavior
 
-- Be respectful and constructive.
-- Focus feedback on code, reasoning, and results.
-- Give credit for ideas, references, and assistance.
-- Ask questions in good faith and respond to review comments professionally.
-- Respect privacy and handle shared information carefully.
+- Communicate clearly, respectfully, and in good faith.
+- Focus feedback on code, documentation, tests, and outcomes rather than personal attacks.
+- Respect academic integrity, authorship, attribution, and evidence-based reporting.
+- Welcome constructive questions, corrections, and well-supported technical discussion.
+- Handle disagreements professionally and with proportionality.
 
 ## Unacceptable Behavior
 
-- Harassment, hate speech, or personal attacks.
-- Plagiarism or misrepresentation of authorship.
-- Deliberate sabotage, spam, or repeated disruption.
-- Sharing private information without consent.
-- Retaliation against people who raise concerns.
+- Harassment, hate speech, discrimination, or demeaning conduct.
+- Bullying, intimidation, threats, or repeated bad-faith disruption.
+- Plagiarism, misrepresentation of authorship, or fabricated technical claims.
+- Doxxing or sharing private information without explicit consent.
+- Retaliation against anyone raising a good-faith concern.
 
 ## Scope
 
-This code of conduct applies to issues, pull requests, reviews, commit messages, and any repository-related discussion.
+This Code of Conduct applies to all project spaces, including issues, pull requests, reviews, discussions, and documentation updates associated with this repository.
 
 ## Reporting
 
-Report concerns to `zecalifornia@up.edu.ph`.
-Include links, screenshots, or commit hashes when they help explain the issue.
+Report conduct concerns to `zecalifornia@up.edu.ph`.
+Include relevant links, screenshots, logs, and context when possible.
+Good-faith reports will be handled as confidentially as practical.
 
 ## Enforcement
 
-Maintainers may delete content, request edits, limit participation, or take other reasonable steps to protect the project and its contributors.
+The maintainer may remove content, pause discussions, reject contributions, or block participation when necessary to protect the project and its contributors.
+Enforcement decisions prioritize safety, fairness, and proportionality.

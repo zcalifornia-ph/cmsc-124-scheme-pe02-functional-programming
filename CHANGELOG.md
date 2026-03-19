@@ -1,15 +1,13 @@
 # Changelog
 
-Status: initial bootstrap for CMSC 124 PE02 Scheme.
+Status: initial repository bootstrap for a CMSC 124 Scheme/Racket programming exercise.
 
 ## v0.0.1
 
 ### Added or Changed
-- Bootstrapped the root documentation from `agent/init.cfg`.
-- Replaced the placeholder README with project-specific guidance for the Scheme/Racket exercise.
-- Added project governance files: `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, and `SECURITY.md`.
-- Filled the Apache-2.0 license notice in `LICENSE.txt`.
-- Added a `.gitignore` for local workflow files, editor debris, and Racket build artifacts.
+- Initialized `README.md` with the project overview, exercise requirements, setup guidance, and maintainer contact details.
+- Initialized `CHANGELOG.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SECURITY.md` with repository-specific governance and support content.
+- Added a root `.gitignore` that hides internal workflow files and ignores generated Racket compilation artifacts.
 
 ### For Deletion
-- None.
+- None from this task context (documentation/bootstrap changes only; no generated build artifacts were created).
